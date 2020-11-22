@@ -53,11 +53,10 @@ def find_pet_by_name(shop, pet_name):
 
 
 
-
-#  def remove_pet_by_name(shop,pet_name):
-#     for pet in shop["pets"]:
-#         if pet["name"] == pet_name:
-#             del pet
+def remove_pet_by_name(shop,pet_name):
+    for pet in shop["pets"]:
+        if pet["name"] == pet_name:
+            del pet
 
 
 
@@ -74,6 +73,11 @@ def remove_customer_cash(customer, cash_remove):
 
 def get_customer_pet_count(customer):
     return len(customer["pets"])
+
+
+def add_pet_to_customer(customer, new_pet):
+    customer["pets"].append(new_pet)
+
 
 
 
